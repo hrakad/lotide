@@ -5,27 +5,19 @@ const assertEqual = function(actual, expected) {
     console.log(` 🛑🛑🛑 Assertion failed  , ${actual} != ${expected}`);
   }
 };
-const eqArrays = function(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
 
 const countOnly = function(allItems, itemsToCount) {
-const results = {};
-for (const item of allItems) {
-  if (itemsToCount[item]) {
-    if (results[item]) {
-      results[item] += 1;
-    } else {
-      results[item] = 1;
+  const results = {};
+  for (const item of allItems) {
+    if (itemsToCount[item]) {
+      if (results[item]) {
+        results[item] += 1;
+      } else {
+        results[item] = 1;
+      }
     }
   }
-}
-return results;
+  return results;
 };
 const firstNames = [
   "Karl",
