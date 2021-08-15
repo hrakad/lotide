@@ -6,15 +6,6 @@ const assertEqual = function(actual, expected) {
     }
   };
 
-// const findKey = function(object, callback) {
-//   for (const key in object) {
-//     if (callback(object[Key])) {
-//       return Key;
-//     }
-//   }
-//   return undefined;
-// };
-
 const findKey = function(object, callback) {
   for (const key in object) {
     //console.log(object[key]);
