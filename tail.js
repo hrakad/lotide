@@ -1,17 +1,29 @@
-const assertEqual = function(array) {
+const tail = function(array) {
+  let finalArray = [];
   for (let i = 0; i < array.length; i++) {
-    if (array.length <= 1) {
-      console.log(`🛑🛑🛑 Assertion failed`  , array[0]);
-    } else if (array.length >= 2) {
-      console.log(`✅✅✅  assetion passed`, array.slice(1));
-      break;
+    if ( array.length >= 2) {
+      return array.slice(1);
     }
+    return finalArray
+  }
+}
+console.log(tail([1,2,3]));
+
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(` ✅✅✅ Assertion passed  , ${actual} === ${expected}`);
+  } else {
+    console.log(` 🛑🛑🛑 Assertion failed  , ${actual} !== ${expected}`);
   }
 };
-  // TEST CODE
-  
-assertEqual(["Hello", "Lighthouse Labs", "Bootcamp"]);
-assertEqual([0, 1, 3, 4, 5]);
-assertEqual(["Hello", "World"]);
-assertEqual([3]);
-assertEqual([1,2]);
+
+// TEST CODE
+
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result.length, 3); 
+assertEqual(result[0], "Lighthouse"); 
+assertEqual(result[1], "Labs"); 
+
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words); // no need to capture the return value since we are not checking it
+assertEqual(words.length, 2);
