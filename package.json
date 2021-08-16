@@ -1,7 +1,8 @@
 {
   "name": "@hrakad/lotide",
+  "descreption":"A mini clone of the Lodash library/ This library was published for learning purposes. It is not intended for use in production-grade software",
   "version": "1.0.0",
-  "main": "",
+  "main": "vagrant/w1/lotide",
   "directories": { 
     "test": "test"
   },
@@ -18,7 +19,7 @@
     "url": "https://github.com/hrakad/lotide/issues"
   },
   "homepage": "https://github.com/hrakad/lotide#readme",
-  "description": "A mini clone of the Lodash library/ This library was published for learning purposes. It is not intended for use in production-grade software",
+  "description": "",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.0.3"
