@@ -1,22 +1,26 @@
 {
-  "name": "lotide",
+  "name": "@hrakad/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
-  "directories": {
+  "main": "",
+  "directories": { 
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hrakad/lotide.git"
   },
-  "author": "",
+  "author": "hrakad",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hrakad/lotide/issues"
   },
-  "homepage": "https://github.com/hrakad/lotide#readme"
+  "homepage": "https://github.com/hrakad/lotide#readme",
+  "description": "A mini clone of the Lodash library/ This library was published for learning purposes. It is not intended for use in production-grade software",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3"
+  }
 }
