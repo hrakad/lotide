@@ -20,4 +20,5 @@ const letterPositions = function(sentence) {
 assertArraysEqual(letterPositions("hello").l, [2, 3]);
 assertArraysEqual(letterPositions("hello").o, [2]);
 
+
 module.exports= letterPositions;
