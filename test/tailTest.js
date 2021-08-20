@@ -1,6 +1,7 @@
 const assert = require('chai').assert
 const tail = require('../tail');
 
+
 describe("#tail", () => {
   it("returns ['Lighthouse', 'labs']  for ['Hello, 'Lighthouse', 'Labs']", () =>{
     const array = ["Hello", "Lighthouse", "Labs"];
